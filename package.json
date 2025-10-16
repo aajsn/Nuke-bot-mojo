@@ -1,0 +1,14 @@
+{
+  "name": "nukebot",
+  "version": "1.0.0",
+  "description": "A bot to nuke Discord servers",
+  "main": "nukebot.js",
+  "scripts": {
+    "start": "http-server ."
+  },
+  "dependencies": {
+    "http-server": "^14.1.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
