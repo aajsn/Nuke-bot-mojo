@@ -1,6 +1,6 @@
 document.getElementById('nukeButton').addEventListener('click', async () => {
-    const token = 'YOUR_DISCORD_BOT_TOKEN'; // ここにDiscordボットのトークンを入力
-    const guildId = 'YOUR_GUILD_ID'; // ここにターゲットとなるサーバーのIDを入力
+    const token = process.env.DISCORD_BOT_TOKEN; // 環境変数からトークンを取得
+    const guildId = process.env.GUILD_ID; // 環境変数からギルドIDを取得
 
     // 全チャンネルを削除
     const response = await fetch(`https://discord.com/api/v9/guilds/${guildId}/channels`, {
